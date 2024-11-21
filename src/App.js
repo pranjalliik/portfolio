@@ -13,7 +13,7 @@ function App() {
 <div className='flex xl:flex-row lg:flex-row md:flex-row flex-col lg:mt-24 xl:mt-24 md:mt-24 mt-20 justify-between items-center xl:items-start lg:items-start md:items-start gap-y-8'>
   <div className='flex flex-col  xl:ml-8 lg:ml-8 md:ml-8 ml-2 mt-2 md:mt-20 lg:mt-20 xl:mt-20 '>
     <div className='lg:text-6xl xl:text-6xl md:text-6xl text-4xl  font-bold text-[#333333]'>Hey there!
-    I'm <span className='text-[#34D1C4]'>Pranjali</span>, </div>
+    I'm <span className='text-[#34D1C4]'>Pranjali</span> </div>
     <div className='text-gray-600 text-xl mt-5'>A Developer turning ideas into seamless, interactive experiences.</div>
     <div className='mt-3 bg-[#34D1C4] text-white rounded-lg w-[150px] text-center py-2 px-8 hover:bg-[#adaea7] cursor-default'><a href="#contact">Contact</a></div>
   </div>
