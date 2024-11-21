@@ -38,11 +38,11 @@ function App() {
   </div>
   
   <div className="text-center text-gray-500 text-sm mb-3">
-    A cutting-edge AI-powered tool designed to help students streamline their study process by generating smart notes, flowcharts, and summaries from their materials.
+    A cutting-edge AI-powered tool designed to help students streamline their study process by generating smart notes and study material tailored to any topic of choice.
   </div>
   
   <div className="text-center text-gray-500 text-xs mb-3">
-    <span className="font-semibold">Technologies:</span> Next.js, MongoDB, TensorFlow, Tailwind CSS
+    <span className="font-semibold">Technologies:</span> Next.js, Sql, Inngest
   </div>
   
   <div className="p-2 bg-black rounded-lg w-full">
@@ -54,7 +54,7 @@ function App() {
     
     <div className="flex justify-center mt-2">
       <a 
-        href="https://project-link.com" 
+        href="https://studify-ai.vercel.app" 
         target="_blank" 
         rel="noopener noreferrer"
         className="text-center text-white bg-[#34D1C4] rounded-lg py-1 px-12 cursor-pointer"
@@ -83,15 +83,14 @@ function App() {
   }}>
 
 <div className="text-center text-[#34D1C4] text-2xl font-semibold mb-3">
-  StudifyAI
+  Chatify
 </div>
 
 <div className="text-center text-gray-500 text-sm mb-3">
-  A cutting-edge AI-powered tool designed to help students streamline their study process by generating smart notes, flowcharts, and summaries from their materials.
-</div>
+Real-Time Chat Application: Built for seamless communication, this chat app utilizes WebSocket scalability with Redis to ensure efficient performance.</div>
 
 <div className="text-center text-gray-500 text-xs mb-3">
-  <span className="font-semibold">Technologies:</span> Next.js, MongoDB, TensorFlow, Tailwind CSS
+  <span className="font-semibold">Technologies:</span> Next.js, Redis, Nodejs, WebSockets, Docker, MongoDB
 </div>
 
 <div className="p-2 bg-black rounded-lg w-full">
@@ -103,7 +102,7 @@ function App() {
   
   <div className="flex justify-center mt-2">
     <a 
-      href="https://project-link.com" 
+      href="https://chatapp-frontend-peach.vercel.app/" 
       target="_blank" 
       rel="noopener noreferrer"
       className="text-center text-white bg-[#34D1C4] rounded-lg py-1 px-12 cursor-pointer"
@@ -180,9 +179,9 @@ function App() {
     <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">Contact</h2>
     <p className="text-center mb-6">Feel free to reach out to me for any questions, collaborations, or opportunities!</p>
     <div className="flex justify-center gap-6">
-      <a href="mailto:your-email@example.com" className="text-[#34D1C4] text-lg">Email</a>
-      <a href="https://www.linkedin.com/in/your-profile" className="text-[#34D1C4] text-lg">LinkedIn</a>
-      <a href="https://github.com/your-profile" className="text-[#34D1C4] text-lg">GitHub</a>
+    <a href="mailto:kaushikpranjali7@gmail.com" className="text-[#34D1C4] text-lg">Email</a>
+    <a href="https://www.linkedin.com/in/pranjali-kaushik-506554281" className="text-[#34D1C4] text-lg">LinkedIn</a>
+      <a href="https://github.com/pranjalliik" className="text-[#34D1C4] text-lg">GitHub</a>
     </div>
   </div>
 </section>

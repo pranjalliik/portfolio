@@ -6,7 +6,7 @@ function NavBar() {
     <nav className="nav bd-grid">
       <div>
         <a href="#" className="nav__logo">
-          Marlon
+          Pranjali
         </a>
       </div>
       <div className="nav__menu" id="nav-menu">
