@@ -83,7 +83,7 @@ function App() {
   }}>
 
 <div className="text-center text-[#34D1C4] text-2xl font-semibold mb-3">
-  Chatify
+  Chatly
 </div>
 
 <div className="text-center text-gray-500 text-sm mb-3">
