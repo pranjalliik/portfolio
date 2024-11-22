@@ -65,7 +65,7 @@ function App() {
     
     <div className="flex justify-center mt-2">
       <a 
-        href="https://youtu.be/ZzqYNQ6jKuU" 
+        href="https://youtu.be/ZzqYNQ6jKuU " 
         target="_blank" 
         rel="noopener noreferrer"
         className="text-center text-white bg-[#34D1C4] rounded-lg py-1 px-10 cursor-pointer"
@@ -113,7 +113,7 @@ Real-Time Chat Application: Built for seamless communication, this chat app util
   
   <div className="flex justify-center mt-2">
     <a 
-      href="https://youtu.be/hMGLIDo1RVg" 
+      href="https://youtu.be/hMGLIDo1RVg " 
       target="_blank" 
       rel="noopener noreferrer"
       className="text-center text-white bg-[#34D1C4] rounded-lg py-1 px-10 cursor-pointer"
