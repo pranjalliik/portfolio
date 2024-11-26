@@ -3,11 +3,40 @@ import NavBar from './components/NavBar';
 import myprofile from './images/myprofile.png'
 import project2 from './images/project2.png'
 import project1 from './images/project1.png'
+import { useRef } from 'react';
+
+
+
 function App() {
+ 
+  const contactRef = useRef(null);
+  const scrollToContact = () => {
+    contactRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+
+
+  const aboutRef = useRef(null);
+  const scrollToAbout = () => {
+    aboutRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+
+  const workRef = useRef(null);
+  const scrollToWork = () => {
+    workRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+  const skillRef = useRef(null);
+  const scrollToSkill = () => {
+    skillRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+
   console.log(typeof window.innerWidth)
   return (
     <>
-   <NavBar/>
+   <NavBar scrollToAbout={scrollToAbout} scrollToContact={scrollToContact} scrollToWork={scrollToWork} scrollToSkill={scrollToSkill}/>
 
 
 <div className='flex xl:flex-row lg:flex-row md:flex-row flex-col lg:mt-24 xl:mt-24 md:mt-24 mt-20 justify-between items-center xl:items-start lg:items-start md:items-start gap-y-8'>
@@ -15,7 +44,7 @@ function App() {
     <div className='lg:text-6xl xl:text-6xl md:text-6xl text-4xl  font-bold text-[#333333]'>Hey there!
     I'm <span className='text-[#34D1C4]'>Pranjali</span> </div>
     <div className='text-gray-600 text-xl mt-5'>A Developer turning ideas into seamless, interactive experiences.</div>
-    <div className='mt-3 bg-[#34D1C4] text-white rounded-lg w-[150px] text-center py-2 px-8 hover:bg-[#adaea7] cursor-default'><a href="#contact">Contact</a></div>
+    <div className='mt-3 bg-[#34D1C4] text-white rounded-lg w-[150px] text-center py-2 px-8 hover:bg-[#adaea7] cursor-default' onClick={scrollToContact}>Contact</div>
   </div>
 <img 
     className="h-[230px] w-[230px] xl:h-[400px] xl:w-[400px]  lg:h-[350px] lg:w-[350px] md:h-[300px] md:w-[300px] xl:mr-24 mr-0 lg:mr-12 md:mr-6" 
@@ -25,7 +54,7 @@ function App() {
 </div>
 
 
-<section className="mt-8" id="work" >
+<section className="mt-8" id="work" ref={workRef}>
 <h2 className="text-3xl font-bold text-gray-800 text-center mb-6">Work</h2>
   <div className="flex flex-wrap justify-center  gap-x-8 mb-6 gap-y-8">
   <div className="w-[425px] "   style={{
@@ -127,7 +156,7 @@ Real-Time Chat Application: Built for seamless communication, this chat app util
 </section>
     
 
-<section className="bg-gray-50 py-12" id="about">
+<section className="bg-gray-50 py-12" id="about" ref={aboutRef}>
   <div className="container mx-auto px-6 md:px-12">
     <h2 className="text-3xl font-bold text-gray-800 text-center mb-6">About Me</h2>
     <div className="text-center text-lg text-gray-700 max-w-2xl mx-auto">
@@ -145,7 +174,7 @@ Real-Time Chat Application: Built for seamless communication, this chat app util
 </section>
 
 
-<section className="py-12 bg-gray-50" id="skills">
+<section className="py-12 bg-gray-50" id="skills" ref={skillRef}>
   <div className="container mx-auto px-6 md:px-12">
     <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">Skills</h2>
     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -174,7 +203,7 @@ Real-Time Chat Application: Built for seamless communication, this chat app util
   </div>
 </section>
 
-<section id="contact" className="py-12 bg-gray-50">
+<section id="contact" className="py-12 bg-gray-50" ref={contactRef}>
   <div className="container mx-auto px-6 md:px-12">
     <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">Contact</h2>
     <p className="text-center mb-6">Feel free to reach out to me for any questions, collaborations, or opportunities!</p>
